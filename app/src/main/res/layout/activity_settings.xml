@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/axon_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- API KEY SECTION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GEMINI API KEY"
+            android:textSize="11sp"
+            android:textColor="@color/axon_primary"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="#0A0A1A"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/etApiKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="AIzaSy..."
+                    android:textColorHint="#44E0E0FF"
+                    android:textColor="@color/axon_text"
+                    android:textSize="13sp"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:padding="8dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#1A00F5FF"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/tvKeyStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your Google Gemini API key"
+                    android:textSize="12sp"
+                    android:textColor="#88E0E0FF"
+                    android:layout_marginBottom="12dp"/>
+
+                <Button
+                    android:id="@+id/btnSaveKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Save API Key"
+                    android:backgroundTint="@color/axon_primary"
+                    android:textColor="@color/axon_bg"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- NOTIFICATION ACCESS SECTION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTIFICATION ACCESS"
+            android:textSize="11sp"
+            android:textColor="@color/axon_primary"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="#0A0A1A"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Required for 'Read notifications' command"
+                    android:textSize="12sp"
+                    android:textColor="#88E0E0FF"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvNotifStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Checking..."
+                    android:textSize="13sp"
+                    android:textColor="@color/axon_error"
+                    android:layout_marginBottom="12dp"/>
+
+                <Button
+                    android:id="@+id/btnNotifAccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Open Notification Settings"
+                    android:backgroundTint="#1A00F5FF"
+                    android:textColor="@color/axon_primary"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- HISTORY SECTION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONVERSATION"
+            android:textSize="11sp"
+            android:textColor="@color/axon_primary"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="#0A0A1A"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <Button
+                    android:id="@+id/btnClearHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Clear Conversation History"
+                    android:backgroundTint="#1AFF4466"
+                    android:textColor="@color/axon_error"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- VERSION -->
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AXON v1.0"
+            android:textSize="11sp"
+            android:textColor="#44E0E0FF"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

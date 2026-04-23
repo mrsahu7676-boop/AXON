@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AXON</string>
+    <string name="settings_title">Settings</string>
+    <string name="notification_service_label">AXON Notification Access</string>
+</resources>

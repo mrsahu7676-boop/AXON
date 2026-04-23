@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="axon_bg">#050510</color>
+    <color name="axon_primary">#00F5FF</color>
+    <color name="axon_secondary">#7B2FFF</color>
+    <color name="axon_text">#E0E0FF</color>
+    <color name="axon_error">#FF4466</color>
+    <color name="axon_surface">#0A0A1A</color>
+</resources>

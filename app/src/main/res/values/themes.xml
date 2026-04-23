@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AxonAssistant" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/axon_primary</item>
+        <item name="colorPrimaryVariant">@color/axon_secondary</item>
+        <item name="colorOnPrimary">@color/axon_bg</item>
+        <item name="colorSurface">@color/axon_surface</item>
+        <item name="colorOnSurface">@color/axon_text</item>
+        <item name="android:windowBackground">@color/axon_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/axon_bg</item>
+        <item name="android:textColor">@color/axon_text</item>
+    </style>
+
+    <!-- Settings uses action bar -->
+    <style name="Theme.AxonAssistant.Settings" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/axon_primary</item>
+        <item name="colorPrimaryVariant">@color/axon_secondary</item>
+        <item name="colorOnPrimary">@color/axon_bg</item>
+        <item name="colorSurface">@color/axon_surface</item>
+        <item name="colorOnSurface">@color/axon_text</item>
+        <item name="android:windowBackground">@color/axon_bg</item>
+        <item name="android:statusBarColor">@color/axon_bg</item>
+        <item name="android:navigationBarColor">@color/axon_bg</item>
+        <item name="android:textColor">@color/axon_text</item>
+        <item name="actionBarStyle">@style/AxonActionBar</item>
+    </style>
+
+    <style name="AxonActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@color/axon_bg</item>
+        <item name="titleTextStyle">@style/AxonActionBarTitle</item>
+    </style>
+
+    <style name="AxonActionBarTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/axon_primary</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>
